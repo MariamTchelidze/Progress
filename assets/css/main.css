@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "SpaceMono-Bold";
+  src: url(../assets/fonts/SpaceMono-Bold);
+}
+@font-face {
+  font-family: "SpaceMono-BoldItalic";
+  src: url(../assets/fonts/SpaceMono-Bold);
+}
+@font-face {
+  font-family: "SpaceMono-Italic";
+  src: url(../assets/fonts/SpaceMono-Italic);
+}
+@font-face {
+  font-family: "SpaceMono-Regular";
+  src: url(../assets/fonts/SpaceMono-BoldItalic);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "SpaceMono-Regular";
+  background-color: #28233a;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  background-color: #2f2c3b;
+}
+header .wrapper {
+  width: 100%;
+  padding: 2.5rem 5.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+  position: relative;
+}
+header .wrapper .header-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  header .wrapper .toggle-div {
+    display: none;
+  }
+}
+header .wrapper .toggle-div .x-icon {
+  display: none;
+}
+header .wrapper .nav-div {
+  display: none;
+}
+@media (min-width: 768px) {
+  header .wrapper .nav-div {
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  header .wrapper .nav-div nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  header .wrapper .nav-div nav ul a {
+    font-size: 3.6rem;
+    text-decoration: none;
+    color: #c3a579;
+  }
+}
+header .wrapper .toggle-menu {
+  display: none;
+}
+header .wrapper .toggle-menu.show-on-mobile {
+  width: 100%;
+  height: calc(100vh + 200px);
+  position: absolute;
+  left: 0;
+  top: 9rem;
+  background-color: #28233a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2.5rem 2.5rem;
+}
+header .wrapper .toggle-menu.show-on-mobile .mobile-navigation-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+header .wrapper .toggle-menu.show-on-mobile .mobile-navigation-ul .mobile-navigation-ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .wrapper .toggle-menu.show-on-mobile .mobile-a {
+  color: #c3a579;
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+header .wrapper .toggle-menu.show-on-mobile .mobile-navigation-ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  header .wrapper .toggle-menu.show-on-mobile {
+    display: none;
+  }
+}
+header .wrapper .toggle-menu.show-on-mobile .buttons-toggle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+header .wrapper .toggle-menu.show-on-mobile .buttons-toggle button {
+  background-color: #1b172b;
+  color: #ffffff;
+  padding: 1.2rem 2rem;
+  border-radius: 2rem;
+  font-family: "SpaceMono-Bold";
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  box-shadow: 0.6rem 0.6rem 0.4rem #c3a579;
+  white-space: nowrap;
+}
+
+.section1 {
+  margin-top: 3rem;
+  padding: 1.2rem;
+  width: 100%;
+}
+.section1 .section1-wrapper {
+  gap: 1.6rem;
+  width: 100%;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section1 .section1-wrapper .buttons-top {
+  display: none;
+}
+@media (min-width: 768px) {
+  .section1 .section1-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .section1 .section1-wrapper .buttons-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section1 .section1-wrapper .buttons-top button {
+    background-color: #1b172b;
+    color: #ffffff;
+    padding: 1.2rem 2rem;
+    border-radius: 2rem;
+    font-family: "SpaceMono-Bold";
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    border: none;
+    outline: none;
+    box-shadow: 0.6rem 0.6rem 0.4rem #c3a579;
+    white-space: nowrap;
+  }
+}
+.section1 .section1-wrapper .heading-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+.section1 .section1-wrapper .heading-div .heading {
+  font-size: 1.8rem;
+  color: #c3a579;
+}
+@media (min-width: 768px) {
+  .section1 .section1-wrapper .heading-div .heading {
+    font-size: 4.8rem;
+  }
+}
+.section1 .section1-wrapper .heading-div .descr {
+  font-size: 1.6rem;
+  color: #474a57;
+}
+@media (min-width: 768px) {
+  .section1 .section1-wrapper .heading-div .descr {
+    font-size: 3.6rem;
+  }
+}
+.section1 .section1-wrapper .image-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.6rem;
+}
+.section1 .section1-wrapper .image-socials .main-portrait {
+  padding: 1.6rem;
+  background-color: #c3a579;
+  border-radius: 12px;
+  box-shadow: 0.9rem 0.9rem 0.4rem #2f2c3b;
+}
+.section1 .section1-wrapper .image-socials .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.section1 .section1-wrapper .image-socials .social-links a {
+  padding: 0.8rem;
+  background-color: #c3a579;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .section1-wrapper .image-socials .social-links a .social-img {
+  height: 2.25rem;
+}
+.section1 .section1-wrapper .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.section1 .section1-wrapper .buttons button {
+  background-color: #1b172b;
+  color: #ffffff;
+  padding: 1.2rem 2rem;
+  border-radius: 2rem;
+  font-family: "SpaceMono-Bold";
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  box-shadow: 0.6rem 0.6rem 0.4rem #c3a579;
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .section1 .section1-wrapper .buttons {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

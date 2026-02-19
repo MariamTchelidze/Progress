@@ -1,9 +1,18 @@
+// Background colors
 $primary-bg-color: #28233a;
 $header-bg-color: #2f2c3b;
 $secondary-bg-color: #c3a579;
+
+// font variables
 $primary-text-color: #c3a579;
 $secondary-text-color: #474a57;
 $primary-btn-text-color: #ffffff;
 $primary-btn-bg-color: #1b172b;
+
+// flex-grid-container gaps
 $primary-gap: 3.2rem;
 $secondary-gap: 2.4rem;
+
+// box-decorations
+$primary-box-shadow: 0.9rem 0.9rem 0.4rem #2f2c3b;
+$btn-box-shadow: 0.6rem 0.6rem 0.4rem #c3a579;
